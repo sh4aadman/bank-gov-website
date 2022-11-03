@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-sans">
+    <header class="bg-zinc-100 m-4 p-4 w-4/5 mx-auto rounded">
+        <h1 class="text-center font-light text-4xl"><a href="/index.html">Bank.Gov</a> > <span
+                class="font-medium">Transactions</span>
+        </h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-2 w-4/5 mx-auto">
+            <div class="bg-zinc-100 m-4 p-4 rounded text-center">
+                <h3 class="font-thin text-4xl">Deposit</h3>
+                <h1 class="font-thin text-4xl">$<span id="deposit-amount-total">00</span></h1>
+            </div>
+            <div class="bg-zinc-100 m-4 p-4 rounded text-center">
+                <h3 class="font-thin text-4xl">Withdraw</h3>
+                <h1 class="font-thin text-4xl">$<span id="withdraw-amount-total">00</span></h1>
+            </div>
+            <div class="bg-zinc-100 m-4 p-4 rounded text-center">
+                <h3 class="font-thin text-4xl">Balance</h3>
+                <h1 class="font-thin text-4xl">$<span id="balance-total">1500</span></h1>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-2 w-4/5 mx-auto">
+            <div class="bg-zinc-100 m-4 p-4 rounded flex flex-col items-center gap-4">
+                <h3 class="font-thin text-2xl">Please enter your amount to deposit!</h3>
+                <input type="text" name="" id="deposit-amount" class="rounded text text-center w-4/5 p-2">
+                <button id="deposit-button" class="border-white border-2 font-extralight p-2 rounded">Deposit</button>
+            </div>
+            <div class="bg-zinc-100 m-4 p-4 rounded flex flex-col items-center gap-4">
+                <h3 class="font-thin text-2xl">Please enter your amount to withdraw!</h3>
+                <input type="text" name="" id="withdraw-amount" class="rounded text text-center w-4/5 p-2">
+                <button id="withdraw-button" class="border-white border-2 font-extralight p-2 rounded">Withdraw</button>
+            </div>
+        </section>
+    </main>
+    <script src="javaScript/transactionsDeposit.js"></script>
+    <script src="javaScript/transactionsWithdraw.js"></script>
+</body>
+
+</html>
